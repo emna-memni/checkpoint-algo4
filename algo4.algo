@@ -1,0 +1,19 @@
+ALGORITHM algor4
+VAR
+  t : ARRAY_OF NUMBER[];
+i,j,k:NUMBER;
+BEGIN
+    j:=2
+WHILE (j<=lENGTH(t))   //boucle 1
+  i:=j-1
+  k:=t[j]
+  WHILE (i>0 && t[i]>k)   //boucle 2
+    t[i+1]:=t[i]
+    i:=i-1
+  END WHILE
+  t[i+1]:=k
+  j:=j+1
+END WHILE
+
+END
+
